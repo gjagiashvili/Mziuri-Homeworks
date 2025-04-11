@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MainSceneController">
+
+   <Label text="Scene 1"/>
+   <Button text="Switch to yellow scene" onAction="#switchToYellow"/>
+   <Button text="Switch to red scene" onAction="#switchToRed"/>
+   <Button text="Switch to green scene" onAction="#switchToGreen"/>
+   <Button text="Click Me" onAction="#handleClick"/>
+</VBox>
