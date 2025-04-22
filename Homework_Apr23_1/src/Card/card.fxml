@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cardPane" prefHeight="294.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Card.CardController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa1a1" height="116.0" layoutX="127.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="308.0" />
+        <CheckBox fx:id="balloonCheckBox" layoutX="182.0" layoutY="62.0" text="Balloon" />
+        <CheckBox fx:id="heartCheckBox" layoutX="260.0" layoutY="62.0" text="Heart" />
+        <CheckBox fx:id="starCheckBox" layoutX="327.0" layoutY="62.0" text="Star" />
+        <Button layoutX="187.0" layoutY="88.0" onAction="#generateCard" text="გააკეთეთ მისალოცი ბარათი" textFill="RED" />
+        <Label fx:id="emojiTextLabel" layoutX="131.0" layoutY="123.0" prefWidth="300.0" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

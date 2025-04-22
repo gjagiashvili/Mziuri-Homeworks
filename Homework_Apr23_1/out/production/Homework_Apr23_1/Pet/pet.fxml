@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pet.PetControl">
+    <children>
+        <Label fx:id="resultLabel" layoutX="200.0" layoutY="45.0" prefHeight="50.0" prefWidth="200.0" wrapText="true"  />
+
+        <RadioButton fx:id="catOption" layoutX="253.0" layoutY="137.0" mnemonicParsing="false" text="კატა">
+            <toggleGroup>
+                <ToggleGroup fx:id="petGroup" />
+            </toggleGroup>
+        </RadioButton>
+
+        <RadioButton fx:id="dogOption" layoutX="253.0" layoutY="155.0" mnemonicParsing="false" text="ძაღლი" toggleGroup="$petGroup" />
+        <RadioButton fx:id="bunnyOption" layoutX="253.0" layoutY="173.0" mnemonicParsing="false" text="კურდღელი" toggleGroup="$petGroup" />
+        <RadioButton fx:id="birdOption" layoutX="253.0" layoutY="194.0" mnemonicParsing="false" text="ჩიტი" toggleGroup="$petGroup" />
+
+        <TextField fx:id="nameField" layoutX="220.0" layoutY="222.0" />
+
+        <Button layoutX="234.0" layoutY="272.0" mnemonicParsing="false" onAction="#handleSelection" text="დაამატე ცხოველი" />
+    </children>
+</AnchorPane>
